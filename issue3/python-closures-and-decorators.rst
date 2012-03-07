@@ -102,7 +102,7 @@ Part II
     
     >>> def print_call(fn):
     …     def fn_wrap(*args, **kwargs):
-    …         print("Calling %s with arguments: \n\targs: %s\n\tkwargs:%s" %fn.__name__, args, kwargs))
+    …         print("Calling %s with arguments: \n\targs: %s\n\tkwargs:%s" % (fn.__name__, args, kwargs))
     …         retval = fn(*args, **kwargs)
     …         print("%s returning '%s'" % (fn.func_name, retval))
     …         return retval

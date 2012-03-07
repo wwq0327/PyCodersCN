@@ -24,7 +24,7 @@ Part I
     … 
     >>> #An implementation of a repeat function
     >>> def repeat(fn, times):
-    …     for i in rannge(times):
+    …     for i in range(times):
     …         fn()
     … 
     >>> repeat(greeter, 3)
@@ -59,7 +59,7 @@ Part I
 ::
     
     >>> def print_call(fn):
-    …     def fn_wrap(*args, **args): #take any arguments
+    …     def fn_wrap(*args, **kwargs): #take any arguments
     …         print ("Calling %s" % (fn.func_name))
     …         return fn(*args, **kwargs) #pass any arguments to fn()
     …     return fn_wrap
